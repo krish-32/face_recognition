@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{%  load static %}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'index/staff/staff_display.css' %}"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="staff">
+      
+<ul>
+    
+  <li><a href="{% url 'staff_profile' %}"><ion-icon name="arrow-back-outline"></ion-icon>&nbsp;Back</a></li>
+  <li><a href="{% url 'Attendance_portal' %}"><ion-icon name="home-sharp"></ion-icon>&nbsp;Home</a></li>
+  <li><a class="active" href="{% url 'staff_profile' %}"><ion-icon name="person-outline"></ion-icon>&nbsp;&nbsp;Staffs Profile</a></li>
+  <h3 class="head">Department Faculties</h3>
+</ul>
+      <div class="grid-container">
+    {% for staff in staffs %}
+    <div class="staff-card">
+        <img src="{{staff.photo.url}}" alt="Staff Photo" class="profile-img">
+        <h2 class="staff-name">{{staff.name}}</h2>
+        <p class="staff-title">{{staff.position}}</p>
+        <p class="staff-description">Dgree:{{staff.degree}}</p>
+        <p class="staff-description">Department:{{staff.department}}</p>
+        <p class="staff-description">Staff_id:{{staff.staff_id}}</p>
+        <p class="staff-description">Email:<a href="mailto:{{staff.email}}">{{staff.email}}</a></p>
+        <p class="staff-description">Phone:{{staff.phone}}</p>
+        <div class="social-links">
+          <a href="{{staff.linkedin}}"><ion-icon name="logo-linkedin" class="icon"></ion-icon>{{staff.linkedin}}</a>
+          <a href="{{staff.github}}"><ion-icon name="logo-github" class="icon"></ion-icon>{{staff.github}}</a>
+          <ion-icon name="logo-whatsapp" class="icon"></ion-icon>{{staff.whatsapp}}
+            
+        </div>
+        <a href="{{staff.id}}">
+            <button class="button type1">
+              <span class="btn-txt">Feedback</span>
+            </button>
+            
+          </a>
+    </div>
+    {% endfor %}
+      </div>
+</body>
+</html> 

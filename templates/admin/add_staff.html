@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static%}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Easy Tutorials YouTube Channel</title>
+    <link rel="stylesheet" href="{% static 'index/add_student.css' %}"/>
+  </head>
+  <body>
+    <div class="container">
+      <form method="post"  enctype="multipart/form-data" class="form">
+        {% csrf_token %}
+        <p class="title">Adding staff</p>
+        <p class="message">Please fill this form without any fail</p>
+        <div class="flex">
+          <label>
+            {{form.as_p}}
+          </label>
+        </div>
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</html>

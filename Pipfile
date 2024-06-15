@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+face-recognition-models = "*"
+face-recognition = "*"
+dlib = "*"
+cmake = "*"
+django = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

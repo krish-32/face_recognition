@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family:'poppis',sans-serif
+  
+}
+body{
+  background: #eee;
+}
+.header{
+  margin: 10px;
+  color: white;
+  background-color: #34312D;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black ;
+  
+}
+.card {
+  box-shadow: 0 4px 8px 0 #797270;
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #797270;
+}
+
+.container {
+  padding: 2px 16px;
+}
+nav{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  width: 280px;
+  background: #453F3C;
+  overflow: hidden;
+  transition: 1s;
+  border-radius:10px
+}
+
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left:20%
+}
+.logo span{
+  padding-left: 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right:-20%
+}
+a{
+  position: relative;
+  width: 300px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+
+
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+  color:#FFFFFF
+}
+a{
+    text-decoration:none
+}
+i{
+    color:#eee
+
+}
+a:hover .nav-item{
+    color:#000000
+}
+a:hover{
+  background: #eee;
+  color:#34AF6D;
+  transition: 0.5s;
+}
+a:hover i{
+  color: #453F3C;
+  transition: 0.5s;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+.container{
+  display: flex;
+}
+
+/* MAin Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main .users{
+  display: flex;
+  width: 100%;
+}
+.users .card{
+  width: 25%;
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 20px black;
+}
+.users .card img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.users .card h4{
+  text-transform: uppercase;
+}
+.users .card p{
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.users table{
+  margin:  auto;
+}
+.users .per span{
+  padding: 5px;
+  border-radius: 10px;
+  background: rgb(223, 223, 223);
+}
+.users td{
+  font-size: 14px;
+  padding-right: 15px;
+}
+.users .card button{
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.users .card button:hover{
+  background: #0c1022;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/*Attendance List serction  */
+.attendance{
+  margin-top: 20px;
+  text-transform: capitalize;
+  margin-left:50px;
+  margin-right:50px;
+  width:100%;
+}
+.attendance-list{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px black;
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #797270;
+  text-align: left;
+
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #C1EDCC;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #C1EDCC;
+}
+.table tbody tr:nth-of-type(even){
+  background: #C1EDCC;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #eee;
+}
+.table button:hover{
+  background: #023E8A;
+  color: #fff;
+  transition: 0.3s;
+}
+/* styles.css */
+.alert{
+  margin-left: 80%;
+  background-color: white;
+  border-radius: 10px;padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 6px black;
+}
+/* styles.css */
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
